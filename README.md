@@ -125,6 +125,10 @@ Wraparound date       : 3135-03-14T12:41:28.8320000+00:00
 
 IdGen also provides an `ITimeSouce` interface; this can be handy for [unittesting](IdGenTests/IdGeneratorTests.cs) purposes or if you want to provide a time-source for the timestamp part of your Id's that is not based on the system time. For unittesting we use our own [`MockTimeSource`](IdGenTests/Mocks/MockTimeSource.cs).
 
+## Configuration
+
+A configuration package for .Net Framework projects can be found in [IdGen.Configuration](https://www.nuget.org/packages/IdGen.Configuration). This package allows you to configure your IdGenerators in your `app.config` or `web.config` file. The configuration section looks like this:
+
 ```xml
 <configuration>
   <configSections>
